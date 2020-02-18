@@ -75,8 +75,8 @@ else {
 
 for (var i=0 ; i<4; i++) {
     console.log(i);
-var age1 = prompt("giss my age");
-var age = Number (age1);
+var agenew = prompt("The Golden question, giss my age");
+var age = Number (agenew);
 if ( age === 25 ) {
     alert ('Thats right');
     score++;
@@ -140,6 +140,6 @@ for ( var p=0 ; p<5 ;p++){
   }
 
   
- alert('your final score is ' + score + ' /7' ) ;
+ alert('Your Final Score Is ' + score + ' /7' ) ;
 
 
