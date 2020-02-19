@@ -21,7 +21,7 @@ if (Q2 === 'yes' ||Q2 === 'y') {
     score++;
 
   //  console.log("Do you need advice? " + Q2);
-} else if (Q2 === 'no' ||Q1 === 'n' ) {
+} else if (Q2 === 'no' ||Q2 === 'n' ) {
     alert('perfection is for God only :)');
    // console.log("Do you need advice? " + Q2);
 }
@@ -35,7 +35,7 @@ if (Q3 === 'yes' ||Q3 === 'y' ) {
     score++;
 
   //  console.log("Do you think advice that related to soft skills will help you ? " + Q3);
-} else if (Q3 === 'no' ||Q1 === 'n' ) {
+} else if (Q3 === 'no' ||Q3 === 'n' ) {
     alert('plz send to me in the email what kind of advice that you need');
   //  console.log("Do you think advice that related to soft skills will help you ? " + Q3);
 }
@@ -59,7 +59,7 @@ else {
 }
 
 var Q5 = prompt('If you reach this stage with yes answer, you schould proud of yourself, becouse you great personality, Are you interesting to see my personal website ? :)').toLowerCase();
-if (Q5 === 'yes' ||Q5 === 'yes' ) {
+if (Q5 === 'yes' ||Q5 === 'y' ) {
     alert('I\'m happy for that :)');
     score++;
 
@@ -103,43 +103,47 @@ else if ((30>=age) && (age>=29)) {
 else {
     alert ('plz be serious');
 }
-}
+} 
 
-alert ("You should answer with my real age, i\'m sad after all this attempts , it\'s 25 years ");
+//alert ("You should answer with my real age, i\'m sad after all this attempts , it\'s 25 years ");
 
-var countries = ['egypt' , 'tunisia ' , 'iraq', 'jordan' , 'palestine' ,'sudan'] ;
+
+var countries = ['egypt', 'tunisia ', 'iraq', 'jordan', 'palestine', 'sudan'];
 var x = 0;
-for ( var p=0 ; p<5 ;p++){
+for (var p = 0; p < 5; p++) {
     //console.log(p); 
-    if (x === 10){
+    if (x === 10) {
         break;
     }
- 
- var country = prompt('There are alots of countries that i like, you should know on of them at least, write down what you giss');
-   //console.log(country); 
-  
-   for (var g=0 ; g<countries.length ; g++){
-    // console.log(g);
-      //console.log(countries[g]);
-         if ( country === countries[g] ) {
+
+    var country = prompt('There are alots of countries that i like, you should know on of them at least, write down what you giss');
+    //console.log(country); 
+
+    for (var g = 0; g < countries.length; g++) {
+        // console.log(g);
+        //console.log(countries[g]);
+        if (country === countries[g]) {
             var x = 10;
-         //  console.log('my lovely country is ' + country );
-          alert(" Thats right :) , you know me well ");
-          score++;
+            //  console.log('my lovely country is ' + country );
+            alert(" Thats right :) , you know me well ");
+            score++;
 
-           break;
-         } else {
-        
-           // alert(" Thats not right  ");
+            break;
+        } else {
 
-           //console.log('your choise not right');
-          
-       }
-    } 
-    
-  }
+            //alert(" Thats not right  ");
 
-  
- alert('Your Final Score Is ' + score + ' /7' ) ;
+            //console.log('your choise not right');
+
+        }
+    }
+    if (x !== 10) {
+        alert("You are not correct");
+    }
+
+}
+
+
+alert('Your Final Score Is ' + score + ' /7');
 
 
