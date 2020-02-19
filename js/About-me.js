@@ -1,7 +1,7 @@
 
 'use strict';
 var score = 0 ;
-
+function que1(){
 var Q1 = prompt('Do you think that i have a creative thinking?').toLowerCase();
 if (Q1 === 'yes' ||Q1 === 'y' ) {
     alert('I\'m happy to hear that from you');
@@ -14,7 +14,9 @@ if (Q1 === 'yes' ||Q1 === 'y' ) {
 else {
     alert('You should back to the question and answer it');
 }
+}que1()
 
+function que2(){
 var Q2 = prompt('Advice is a good way for correcting our path, Do you like advice?').toLowerCase();
 if (Q2 === 'yes' ||Q2 === 'y') {
     alert('This means that you are a superior person');
@@ -28,10 +30,12 @@ if (Q2 === 'yes' ||Q2 === 'y') {
 else {
     alert('You should back to the question and answer it');
 }
+}que2()
 
+function que3(){
 var Q3 = prompt('Do you think advice that related to soft skills will help you ?').toLowerCase();
 if (Q3 === 'yes' ||Q3 === 'y' ) {
-    alert('God choise, we all need this kind of advice');
+    alert('Good choise, we all need this kind of advice');
     score++;
 
   //  console.log("Do you think advice that related to soft skills will help you ? " + Q3);
@@ -42,7 +46,9 @@ if (Q3 === 'yes' ||Q3 === 'y' ) {
 else {
     alert('You should back to the question and answer it');
 }
+}que3()
 
+function que4(){
 var Q4 = prompt('I put a Golden Box to advice me what you I need to be a successful and creative person. Do you promise to use it if you have advice for me ? :)').toLowerCase();
 if (Q4 === 'yes' ||Q4 === 'y' ) {
     alert('This is a great service from you');
@@ -57,7 +63,9 @@ if (Q4 === 'yes' ||Q4 === 'y' ) {
 else {
     alert('You should back to the question and answer it');
 }
+}que4()
 
+function que5(){
 var Q5 = prompt('If you reach this stage with yes answer, you schould proud of yourself, becouse you great personality, Are you interesting to see my personal website ? :)').toLowerCase();
 if (Q5 === 'yes' ||Q5 === 'y' ) {
     alert('I\'m happy for that :)');
@@ -72,10 +80,12 @@ if (Q5 === 'yes' ||Q5 === 'y' ) {
 else {
     alert('You should back to the question and answer it');
 }
+}que5()
 
+function que6(){
 for (var i=0 ; i<4; i++) {
     console.log(i);
-var agenew = prompt("The Golden question, giss my age");
+var agenew = prompt("The Golden question, guess my age");
 var age = Number (agenew);
 if ( age === 25 ) {
     alert ('Thats right');
@@ -94,7 +104,6 @@ else if ((21>age) && (age>=20)) {
     alert (' that\'s too young man!  ');
     
 }
- 
 else if ((30>=age) && (age>=29)) {
     alert (' i think i could be smarter in this age :) ');
     
@@ -104,10 +113,10 @@ else {
     alert ('plz be serious');
 }
 } 
-
 //alert ("You should answer with my real age, i\'m sad after all this attempts , it\'s 25 years ");
+}que6()
 
-
+function que7(){
 var countries = ['egypt', 'tunisia ', 'iraq', 'jordan', 'palestine', 'sudan'];
 var x = 0;
 for (var p = 0; p < 5; p++) {
@@ -116,7 +125,7 @@ for (var p = 0; p < 5; p++) {
         break;
     }
 
-    var country = prompt('There are alots of countries that i like, you should know on of them at least, write down what you giss');
+    var country = prompt('There are alots of countries that i like, you should know on of them at least, write down what you guess');
     //console.log(country); 
 
     for (var g = 0; g < countries.length; g++) {
@@ -140,9 +149,8 @@ for (var p = 0; p < 5; p++) {
     if (x !== 10) {
         alert("You are not correct");
     }
-
 }
-
+}que7()
 
 alert('Your Final Score Is ' + score + ' /7');
 
